@@ -525,3 +525,250 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/application (63.3ms)
   Rendered layouts/_nav.html.erb (0.1ms)
 Completed 200 OK in 177ms (Views: 147.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 172.126.60.58 at 2017-04-25 16:42:35 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (69.6ms)
+  Rendered layouts/_nav_guest.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+Completed 200 OK in 793ms (Views: 754.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/home" for 172.126.60.58 at 2017-04-25 16:42:46 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 172.126.60.58 at 2017-04-25 16:44:12 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (6.3ms)
+Completed 200 OK in 543ms (Views: 446.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 172.126.60.58 at 2017-04-25 16:44:29 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Rendered pages/profile.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 172.126.60.58 at 2017-04-25 16:44:35 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.126.60.58 at 2017-04-25 16:45:28 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.2ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 115ms (Views: 99.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 172.126.60.58 at 2017-04-25 16:45:35 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.126.60.58 at 2017-04-25 16:45:44 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Uc7c3pMeazfIpXWEWTZG4rzl+127uMjqnfQ6t//8eEsGtmA8pCXTFn19PToXjNDBtGsCeEavyB/UPKM4PRjJQ==", "user"=>{"email"=>"rtusing@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rtusing@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "rtusing@gmail.com"], ["encrypted_password", "$2a$11$NboOdH3ZlfziNxtnqNkaiOjth95eHbDGxMKKpgBniDHqYDpJWxuJ."], ["created_at", "2017-04-25 16:45:44.960398"], ["updated_at", "2017-04-25 16:45:44.960398"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-04-25 16:45:44.976422"], ["current_sign_in_at", "2017-04-25 16:45:44.976422"], ["last_sign_in_ip", "172.126.60.58"], ["current_sign_in_ip", "172.126.60.58"], ["sign_in_count", 1], ["updated_at", "2017-04-25 16:45:44.977672"], ["id", 1]]
+  [1m[35m (13.0ms)[0m  commit transaction
+Redirected to https://ribbit-rtusing.c9users.io/
+Completed 302 Found in 387ms (ActiveRecord: 26.7ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 16:45:45 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (4.4ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 16:53:01 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for 172.126.60.58 at 2017-04-25 16:53:06 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_nav_user.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 172.126.60.58 at 2017-04-25 16:53:15 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"chWZKdlmpRB8GwWC3Wc3Plbe15MNhxPqADfj+ezMtxmnSHvaUbpL8PrMZKAkXd1m2vzsd5pzT+nVEMGf08cl3Q=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://ribbit-rtusing.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 16:53:15 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.1ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.126.60.58 at 2017-04-25 16:53:38 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 172.126.60.58 at 2017-04-25 16:53:46 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ydcGDoEGJ2v0h6vTLX2OHIq5HzesbgGw+CSxDaK/9KdWc6eY9qK89dH+J5ql5vCDZj4nE6wKp/n90NDIuIlmKQ==", "user"=>{"email"=>"rtusing@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "rtusing@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-04-25 16:53:46.668625"], ["sign_in_count", 2], ["updated_at", "2017-04-25 16:53:46.669839"], ["id", 1]]
+  [1m[35m (11.6ms)[0m  commit transaction
+Redirected to https://ribbit-rtusing.c9users.io/
+Completed 302 Found in 173ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 16:53:46 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 17:00:08 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.3ms)
+  Rendered layouts/_nav.html.erb (61.4ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 172.126.60.58 at 2017-04-25 17:00:14 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yfiGSfFGac3DWe/p0z43MKOcEdza/EFkiHEVs6mQoOgFtmuqW6NE6mpnM5gzb+1cVLaNGfxBnroPMLLqZlQxJw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://ribbit-rtusing.c9users.io/
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 17:00:14 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (1.1ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.126.60.58 at 2017-04-25 17:00:20 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.126.60.58 at 2017-04-25 17:00:24 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+Completed 200 OK in 122ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 172.126.60.58 at 2017-04-25 17:00:27 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwFepVipsLVDsnBAAfIHolT6CpWVXqTX64GONpSX47sRK3nRa8/Fhv2w3WyjnE/7E1ipgKDRFtuwmvqD0z+KjQ==", "user"=>{"email"=>"rtusing@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rtusing@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-04-25 16:53:46.668625"], ["current_sign_in_at", "2017-04-25 17:00:27.277836"], ["sign_in_count", 3], ["updated_at", "2017-04-25 17:00:27.279303"], ["id", 1]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://ribbit-rtusing.c9users.io/
+Completed 302 Found in 247ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 17:00:27 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.126.60.58 at 2017-04-25 17:05:37 +0000
+Cannot render console from 172.126.60.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav_user.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+Completed 200 OK in 197ms (Views: 196.3ms | ActiveRecord: 0.2ms)
