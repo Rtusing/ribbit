@@ -1,2 +1,73 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<% if !user_signed_in? %> 
+    <style>
+        body {
+            background: linear-gradient(
+            rgba(0,0,0, 0.6),
+            rgba(0,0,0, 0.6)
+            ), url("firebg.jpg") no-repeat center center fixed; /* only display once, centered on page, cannot scroll */
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size:cover;
+            background-size: cover;
+        }
+        h1 {
+            color :white;
+            font-weight: bold;
+        }
+        .container-index {
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+        .text {
+            color: white;
+            font-weight: 300;
+            font-size: 150%;
+        }
+        .footer-links {
+            color: white;
+            text-align: center;
+            margin-top: 15%;
+            font-size: 70%;
+        }
+        .log-in {
+            float:right;
+            width: 300px;
+            height: 150px;
+            margin-top: 7.5%;
+        }
+        .sign-up {
+            float:right;
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+    
+    <div class="container-index row">
+        <div class="col-sm-6">
+            <h1>Welcome to Sparky.</h1>
+            <p class="text">
+            Connect with your Buddies. Play ball with a dog. <br>
+            Learn how to Juggle. Donald Trump is even on here. <br>
+            (No Really He is)
+            </p>
+        </div>
+        
+        <div class="col-sm-6">
+            <div class="log-in panel">
+                Log In
+            </div>
+            
+            <div class="sign-up panel">
+                Sign Up
+            </div>
+        </div>
+        
+        <div class="col-sm-12">
+            <p class="footer-links">About Help Terms Privacy Info Directory Sparky 2016</p>
+        </div>
+    </div>
+
+<% else %>
+    <script>document.location = "/home"</script>
+
+<% end %>
