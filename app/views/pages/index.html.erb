@@ -32,13 +32,11 @@
         .log-in {
             float:right;
             width: 300px;
-            height: 150px;
             margin-top: 7.5%;
         }
         .sign-up {
             float:right;
             width: 300px;
-            height: 250px;
         }
     </style>
     
@@ -54,11 +52,71 @@
         
         <div class="col-sm-6">
             <div class="log-in panel">
-                Log In
+                
+                <center><h2>Log In</h2></center>
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <div class="field">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email, autofocus: true, class: "form-control" %>
+                  </div>
+                
+                  <div class="field">
+                    <%= f.label :password %><br />
+                    <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+                  </div>
+                
+                  <% if devise_mapping.rememberable? -%>
+                    <div class="field">
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me %>
+                    </div>
+                  <% end -%>
+                
+                  <div class="actions">
+                    <center>
+                      <%= f.submit "Log in", class: "btn btn-primary" %>
+                    </center>
+                  </div>
+                <% end %>
             </div>
             
             <div class="sign-up panel">
-                Sign Up
+                    
+                    <center><h2>Sign Up</h2></center>
+
+                    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                      <%= devise_error_messages! %>
+                    
+                      <div class="field">
+                        <%= f.label :username %><br />
+                        <%= f.text_field :username, autofocus:true, class: "form-control" %>
+                      </div>
+                      
+                      <div class="field">
+                        <%= f.label :email %><br />
+                        <%= f.email_field :email, class: "form-control"  %>
+                      </div>
+                    
+                      <div class="field">
+                        <%= f.label :password %>
+                        <% if @minimum_password_length %>
+                        <em>(<%= @minimum_password_length %> characters minimum)</em>
+                        <% end %><br />
+                        <%= f.password_field :password, autocomplete: "off", class: "form-control"  %>
+                      </div>
+                    
+                      <div class="field">
+                        <%= f.label :password_confirmation %><br />
+                        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control"  %>
+                      </div>
+                    <br>
+                      <div class="actions">
+                        <center>
+                              <%= f.submit "Sign up", class: "btn btn-primary" %>
+                        </center>
+                      </div>
+                    <% end %>
+                
             </div>
         </div>
         
