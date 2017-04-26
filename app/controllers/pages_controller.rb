@@ -30,5 +30,6 @@ class PagesController < ApplicationController
   def explore
     @posts = Post.all
     @newPost = Post.new
+    @toFollow = User.all.last(5)
   end
 end
