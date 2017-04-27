@@ -32,4 +32,9 @@ class PagesController < ApplicationController
     @newPost = Post.new
     @toFollow = User.all.last(5)
   end
+  
+    #back-end code for pages/calendar
+  def calendar
+  end
+  
 end
