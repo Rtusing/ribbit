@@ -35,6 +35,7 @@ class PagesController < ApplicationController
   
     #back-end code for pages/calendar
   def calendar
+    @meetings = Meeting.all
   end
   
 end

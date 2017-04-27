@@ -1,15 +1,24 @@
 source 'https://rubygems.org'
 ruby "2.3.0"
 
+gem 'rails', '4.2.5'
+# Use pg for heroku
+gem 'pg'
+# Heroku Pre-Req
+
+#simple calendar install
+gem "simple_calendar", "~> 2.0"
+
+
+gem 'sqlite3'
+# sqlite3 for testing purposes
+
 #Include the Devise Gem for authentication and user accounts.
 gem 'devise'
 # Twitter UI components inc. navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
-# Use pg for heroku
-gem 'pg'
-# Heroku Pre-Req
+
 gem 'rails_12factor', group: :production # don't use locally
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
