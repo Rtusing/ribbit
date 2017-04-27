@@ -10,7 +10,7 @@ gem 'pg'
 gem "simple_calendar", "~> 2.0"
 
 
-gem 'sqlite3'
+#gem 'sqlite3'
 # sqlite3 for testing purposes
 
 #Include the Devise Gem for authentication and user accounts.
